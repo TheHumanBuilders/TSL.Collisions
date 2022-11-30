@@ -1,0 +1,8 @@
+{
+  "name": "com.tsl.collisions",
+  "version": "0.0.1",
+  "description": "A toolset for checking collisions",
+  "displayName": "TSL Collisions",
+  "hideInEditor": false,
+  "type": "library"
+}
