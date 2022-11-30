@@ -1,3 +1,11 @@
+## **Wednesday, November 30th, 2022 - v1.0.0**
+### *Breaking Changes*
++ center and size no longer need to be passed in. As a trade off, a collider
+  must be provided in the constructor
++ layer mask defaults to "Default" layer unless otherwise specified
++ collision checking no longer assumes to CompareTag() against "Ground" tag. a
+  list of tags can now be passed into the constructor.
+
 ## **Wednesday, November 30th, 2022 - v0.0.1**
 
 ### Changes *(Breaking)*
