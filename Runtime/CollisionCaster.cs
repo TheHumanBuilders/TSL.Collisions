@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace TSL.Collisions {
+namespace TSL.PlayerTools {
 
   #region Interface
   public interface ICollisionCaster {
@@ -152,6 +152,17 @@ namespace TSL.Collisions {
     /// <returns>Returns true if the box would fit in the space directly to its right.</returns>
     /// <seealso cref="CollisionCaster.FitsInDirection" />
     bool FitsInDirection(Vector2 direction, out Collider2D[] hits);
+
+     /// <summary>
+    /// Whether or not a collision can be considered a valid collision.
+    /// </summary>
+    /// <param name="collider">The collider of the other object (i.e., not the
+    /// player's collider).</param>
+    /// <param name="hitNormal">The normal for the collision.</param>
+    /// <param name="checkNormal">The normal expected.</param>
+    /// <returns>True if this is a valid hit. False otherwise.</returns>
+    /// <seealso cref="CollisionCaster.IsHit" />
+    bool IsHit(Collider2D collider, Vector2? hitNormal = null, Vector2? checkNormal = null);
   }
   #endregion
 
@@ -500,7 +511,7 @@ namespace TSL.Collisions {
     /// <param name="hitNormal">The normal for the collision.</param>
     /// <param name="checkNormal">The normal expected.</param>
     /// <returns>True if this is a valid "ground" hit. False otherwise.</returns>
-    private bool IsHit(Collider2D collider, Vector2? hitNormal = null, Vector2? checkNormal = null) {
+    public bool IsHit(Collider2D collider, Vector2? hitNormal = null, Vector2? checkNormal = null) {
       if (collider == null) {
         return false;
       }

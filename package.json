@@ -2,7 +2,7 @@
   "name": "com.tsl.collisions",
   "version": "1.0.0",
   "description": "A toolset for checking collisions",
-  "displayName": "TSL Collisions",
+  "displayName": "TSL PlayerTools",
   "hideInEditor": false,
   "type": "library"
 }
