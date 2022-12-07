@@ -541,12 +541,12 @@ namespace TSL.PlayerTools {
 
     private bool IsTagged(Collider2D collider) {
       foreach (string tag in tags) {
-        if (!collider.CompareTag(tag)) {
-          return false;
+        if (collider.CompareTag(tag)) {
+          return true;
         }
       }
 
-      return true;
+      return false;
     }
 
 

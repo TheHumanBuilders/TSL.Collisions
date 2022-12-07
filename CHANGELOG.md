@@ -1,3 +1,7 @@
+## **Tuesday, December 6th, 2022 - v1.0.1**
++ Fixed an issue where collisions were filtered out if colliders didn't belong
+  to ALL listed tags, instead of including them if they belonged to ANY listed tag.
+
 ## **Wednesday, November 30th, 2022 - v1.0.0**
 ### *Breaking Changes*
 + center and size no longer need to be passed in. As a trade off, a collider
