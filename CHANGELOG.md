@@ -1,6 +1,8 @@
-## **Tuesday, December 6th, 2022 - v1.0.1**
+## **Tuesday, December 6th, 2022 - v1.0.2**
 + Fixed an issue where collisions were filtered out if colliders didn't belong
-  to ALL listed tags, instead of including them if they belonged to ANY listed tag.
+  to ALL listed tags, instead of including them if they belonged to ANY listed
+  tag.
++ Fixed an issue where colliders could unexpectedly collide with themselves.
 
 ## **Wednesday, November 30th, 2022 - v1.0.0**
 ### *Breaking Changes*

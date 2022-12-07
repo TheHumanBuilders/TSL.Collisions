@@ -534,7 +534,8 @@ namespace TSL.PlayerTools {
         return false;
       }
 
-      return (parent == null || !Physics2D.GetIgnoreCollision(collider, parent)) && // Collision isn't purposefully ignored,
+      return parent != collider && // Isn't colliding with itself.
+        (parent == null || !Physics2D.GetIgnoreCollision(collider, parent)) && // Collision isn't purposefully ignored,
         IsTagged(collider) && // Collider is tagged with something we care about
         !collider.isTrigger; // & Collider isn't a trigger.
     }
