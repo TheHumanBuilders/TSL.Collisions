@@ -1,6 +1,6 @@
 {
-  "name": "com.tsl.collisions",
-  "version": "1.0.1",
+  "name": "com.tsl.playertools",
+  "version": "1.0.3",
   "description": "A toolset for checking collisions",
   "displayName": "TSL PlayerTools",
   "hideInEditor": false,
